@@ -17,6 +17,13 @@ st.set_page_config(
 
 HIGH_CONF_THRESHOLD = 0.9
 
+st.title("EU Collaboration Dashboard")
+
+st.info("New to the dashboard? Watch this short walkthrough to understand its features and how to use it")
+
+with st.expander("Open video walkthrough"):
+    st.video("assets/dashboard_walkthrough.mp4")
+
 # Fixed cluster color mapping
 CLUSTER_COLORS = {
     0: "#1f77b4",
