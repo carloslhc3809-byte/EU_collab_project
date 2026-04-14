@@ -541,7 +541,6 @@ if section == "Explorer":
                 "Target": [l["target_name"] for l in links],
                 "Score": [round(l["score"], 4) for l in links],
                 "Confidence": [score_label(l["score"]) for l in links],
-                "Status": [l["status"] for l in links],
                 "Cluster": [int(get_row_by_nodeid(l["target"])["cluster"]) for l in links],
             })
             st.dataframe(table_df, use_container_width=True)
