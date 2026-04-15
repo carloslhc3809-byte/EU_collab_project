@@ -384,18 +384,17 @@ if not st.session_state.onboarding_complete:
     with desc_col:
         st.markdown(
             """
-            This dashboard explores predicted future co-patenting relationships between
-            organisations using a temporal graph neural network trained on decades of
+            This dashboard explores model-predicted co-patenting link candidates between
+            organisations using a temporal graph neural network trained on historical
             patent collaboration data. The model learns from the evolving structure of
-            co-inventor networks — capturing not just who has collaborated, but when and
-            how those relationships have changed over time — to estimate which pairs of
-            organisations are most likely to file joint patents in a future year. Each
-            prediction is scored by the model and can be filtered by confidence level or
+            co-inventor networks — capturing not only who has collaborated, but also how
+            collaboration patterns change over time — to identify which pairs of
+            organisations emerge as strong candidates for future joint patenting. Each
+            prediction is assigned a model score and can be filtered by score threshold or
             explored spatially through an interactive UMAP embedding of the learned
             node representations. The Explorer tab lets you select any organisation and
-            inspect its ranked collaboration candidates alongside their historical context,
-            while the Model Overview tab provides training diagnostics and the full
-            analytical guide.
+            inspect its ranked collaboration candidates, while the Model Overview tab
+            provides training diagnostics and the full analytical guide.
             """
         )
 
