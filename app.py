@@ -410,7 +410,7 @@ if not st.session_state.onboarding_complete:
 
 st.title("🧬 Temporal Co-Patent Link Predictor")
 st.caption(
-    "Explore predicted future co-patenting links between organizations "
+    "Explore model-predicted co-patenting link candidates between organizations "
     "based on historical collaboration patterns and temporal graph embeddings."
 )
 
@@ -532,8 +532,8 @@ if section == "Explorer":
 
         st.markdown("#### Ranked collaboration candidates")
         st.caption(
-            "Scores reflect model-estimated collaboration potential based on historical "
-            "network patterns and temporal dynamics."
+            "Scores reflect the model’s relative ranking of collaboration candidates "
+            "based on historical network patterns and temporal dynamics."
         )
 
         if links:
